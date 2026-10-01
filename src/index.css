@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "./styles/tokens.css";
+
+@layer base {
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom scrollbars for high-density command center layout */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a364f;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}

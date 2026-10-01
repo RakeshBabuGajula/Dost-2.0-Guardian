@@ -1,0 +1,75 @@
+/* DOST Guardian Safety Command - Design System Tokens */
+
+:root {
+  /* Color Palette - Core Theme */
+  --bg-base: #090D16;
+  --bg-panel: #121826;
+  --bg-surface: #1A2336;
+  --bg-elevated: #242F46;
+  --border-default: #2A364F;
+  --border-subtle: #1E293B;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Accent Tokens */
+  --accent-primary: #0284C7;
+  --accent-cyan: #06B6D4;
+  --accent-purple: #A855F7;
+
+  /* Safety State Tokens */
+  --state-safe: #10B981;
+  --state-caution: #F59E0B;
+  --state-warning: #F97316;
+  --state-critical: #EF4444;
+  --state-emergency: #DC2626;
+  --state-offline: #64748B;
+
+  /* Text Tokens */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+}
+
+/* Base custom utility animations */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 16px rgba(239, 68, 68, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 1.8s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(1000%);
+  }
+}
+
+.scanline-effect {
+  position: relative;
+  overflow: hidden;
+}
+.scanline-effect::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.4), transparent);
+  animation: scanline 4s linear infinite;
+  pointer-events: none;
+}
