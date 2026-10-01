@@ -174,8 +174,8 @@ To launch the complete production stack (PostgreSQL + PostGIS, Redis, and FastAP
 
 ```bash
 # Clone the repository
-git clone https://github.com/RakeshBabuGajula/my_portfolio.git
-cd "DOST 2.0 GUARDIAN"
+git clone https://github.com/RakeshBabuGajula/Dost-2.0-Guardian.git
+cd Dost-2.0-Guardian
 
 # Spin up all containers in background
 docker compose up -d --build
