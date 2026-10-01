@@ -38,6 +38,9 @@ Inspired by international railway safety standards and operational track mainten
 
 ## 📸 Platform Screenshots & Interface Showcase
 <div align="center">
+<img width="1600" height="1002" alt="DOST ScreenShot" src="https://github.com/user-attachments/assets/3a89bdeb-d861-4097-aa22-6cbaaa18a76a" />
+<img width="1600" height="1000" alt="DOST ScreenShot 1" src="https://github.com/user-attachments/assets/7bc63d57-c3b0-4868-8632-05541b5022a7" />
+
 
 ## 🌟 Key Architectural Highlights
 
